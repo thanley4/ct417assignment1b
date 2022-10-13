@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a4fc94a-7a19-4221-b549-8bebf87ac6c3" name="Changes" comment="Functional Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="8a4fc94a-7a19-4221-b549-8bebf87ac6c3" name="Changes" comment="Added print statements to LectureManagementSystem tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +58,58 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RunManager" selected="Gradle.LectureManagementSystemTest.testAddStudentToCourse">
+    <configuration name="LectureManagementSystemTest.testAddStudentToCourse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;LectureManagementSystemTest.testAddStudentToCourse&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'assignment1b.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.LectureManagementSystemTest.testAddStudentToCourse" />
+        <item itemvalue="Gradle.Tests in 'assignment1b.test'" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665482283021</updated>
       <workItem from="1665482285432" duration="1510000" />
-      <workItem from="1665588073746" duration="1873000" />
+      <workItem from="1665588073746" duration="3149000" />
     </task>
     <task id="LOCAL-00001" summary="Functional Commit">
       <created>1665482826051</created>
@@ -77,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665482826051</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Import Tests Improved">
+      <created>1665668752080</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665668752080</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added print statements to LectureManagementSystem tests">
+      <created>1665669537483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665669537483</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +161,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Functional Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional Commit" />
+    <MESSAGE value="Import Tests Improved" />
+    <MESSAGE value="Added print statements to LectureManagementSystem tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added print statements to LectureManagementSystem tests" />
   </component>
 </project>
