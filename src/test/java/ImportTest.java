@@ -19,6 +19,7 @@ public class ImportTest
         assertEquals(course.getName(), "Electronic and Computer Engineering");
         assertEquals(course.getStartDate(), new LocalDate(2019, 9, 5));
         assertEquals(course.getEndDate(), new LocalDate(2024, 5, 31));
+        System.out.println("\nCourse Object Imported Successfully");
     }
 
     @Test
@@ -29,6 +30,7 @@ public class ImportTest
         assertEquals(lecturer.getName(), "Michael");
         assertEquals(lecturer.getDateOfBirth(), new LocalDate(1980, 1, 1));
         assertEquals(lecturer.getAge(), 42);
+        System.out.println("\nLecturer Object Imported Successfully");
     }
 
     @Test
@@ -41,6 +43,7 @@ public class ImportTest
         assertEquals(module.getLecturer(), lecturer);
         assertEquals(module.getName(), "Software Engineering 3");
         assertEquals(module.getCode(), "CT417");
+        System.out.println("\nModule Object Imported Successfully");
     }
 
     @Test
@@ -53,5 +56,6 @@ public class ImportTest
         assertEquals(student.getAge(), 21);
         assertEquals(student.getId(), 19417576);
         assertEquals(student.getUsername(), "Timothy21");
+        System.out.println("\nStudent Object Imported Successfully");
     }
 }
