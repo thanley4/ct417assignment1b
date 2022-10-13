@@ -18,6 +18,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addStudentToCourse(student, course);
         assertTrue(course.getStudents().contains(student));
         assertTrue(student.getCourses().contains(course));
+        System.out.println(student + "\nCourses: " + student.getCourses() + "\n");
+        System.out.println(course + "\nStudents: " + course.getStudents() + "\n");
     }
 
     @Test
@@ -26,6 +28,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeStudentFromCourse(student, course);
         assertFalse(course.getStudents().contains(student));
         assertFalse(student.getCourses().contains(course));
+        System.out.println(student + "\nCourses: " + student.getCourses() + "\n");
+        System.out.println(course + "\nStudents: " + course.getStudents() + "\n");
     }
 
     @Test
@@ -34,6 +38,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addModuleToCourse(module, course);
         assertTrue(course.getModules().contains(module));
         assertTrue(module.getCourses().contains(course));
+        System.out.println(course + "\nModules: " + course.getModules() + "\n");
+        System.out.println(module + "\nCourses: " + module.getCourses() + "\n");
     }
 
 
@@ -43,6 +49,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeModuleFromCourse(module, course);
         assertFalse(course.getModules().contains(module));
         assertFalse(module.getCourses().contains(course));
+        System.out.println(course + "\nModules: " + course.getModules() + "\n");
+        System.out.println(module + "\nCourses: " + module.getCourses() + "\n");
     }
 
     /** Module Tests **/
@@ -53,6 +61,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addStudentToModule(student, module);
         assertTrue(student.getModules().contains(module));
         assertTrue(module.getStudents().contains(student));
+        System.out.println(module + "\nStudents: " + module.getStudents() + "\n");
+        System.out.println(student + "\nModules: " + student.getModules() + "\n");
     }
 
     @Test
@@ -61,6 +71,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeStudentFromModule(student, module);
         assertFalse(student.getModules().contains(module));
         assertFalse(module.getStudents().contains(student));
+        System.out.println(module + "\nStudents: " + module.getStudents() + "\n");
+        System.out.println(student + "\nModules: " + student.getModules() + "\n");
     }
 
     @Test
@@ -69,6 +81,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addLecturerToModule(lecturer, module);
         assertEquals(lecturer, module.getLecturer());
         assertTrue(lecturer.getModules().contains(module));
+        System.out.println(module + "\nLecturer: " + module.getLecturer() + "\n");
+        System.out.println(lecturer + "\nModules: " + lecturer.getModules() + "\n");
     }
 
     @Test
@@ -77,6 +91,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeLecturerFromModule(lecturer, module);
         assertNull(module.getLecturer());
         assertFalse(lecturer.getModules().contains(module));
+        System.out.println(module + "\nLecturer: " + module.getLecturer() + "\n");
+        System.out.println(lecturer + "\nModules: " + lecturer.getModules() + "\n");
     }
 
     /** Lecturer Tests **/
@@ -87,6 +103,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addModuleToLecturer(module, lecturer);
         assertTrue(lecturer.getModules().contains(module));
         assertEquals(lecturer, module.getLecturer());
+        System.out.println(lecturer + "\nModules: " + lecturer.getModules() + "\n");
+        System.out.println(module + "\nLecturer: " + module.getLecturer() + "\n");
     }
 
     @Test
@@ -95,6 +113,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeModuleFromLecturer(module, lecturer);
         assertFalse(lecturer.getModules().contains(module));
         assertNull(module.getLecturer());
+        System.out.println(lecturer + "\nModules: " + lecturer.getModules() + "\n");
+        System.out.println(module + "\nLecturer: " + module.getLecturer() + "\n");
     }
 
     /** Student Tests **/
@@ -105,6 +125,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addCourseToStudent(course, student);
         assertTrue(student.getCourses().contains(course));
         assertTrue(course.getStudents().contains(student));
+        System.out.println(student + "\nCourses: " + student.getCourses() + "\n");
+        System.out.println(course + "\nStudents: " + course.getStudents() + "\n");
     }
 
     @Test
@@ -113,6 +135,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeCourseFromStudent(course, student);
         assertFalse(student.getCourses().contains(course));
         assertFalse(course.getStudents().contains(student));
+        System.out.println(student + "\nCourses: " + student.getCourses() + "\n");
+        System.out.println(course + "\nStudents: " + course.getStudents() + "\n");
     }
 
     @Test
@@ -121,6 +145,8 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addModuleToStudent(module, student);
         assertTrue(student.getModules().contains(module));
         assertTrue(module.getStudents().contains(student));
+        System.out.println(student + "\nModules: " + student.getModules() + "\n");
+        System.out.println(module + "\nStudents: " + module.getStudents() + "\n");
     }
 
     @Test
@@ -129,5 +155,7 @@ public class LectureManagementSystemTest
         lectureManagementSystem.removeModuleFromStudent(module, student);
         assertFalse(student.getModules().contains(module));
         assertFalse(module.getStudents().contains(student));
+        System.out.println(student + "\nModules: " + student.getModules() + "\n");
+        System.out.println(module + "\nStudents: " + module.getStudents() + "\n");
     }
 }
