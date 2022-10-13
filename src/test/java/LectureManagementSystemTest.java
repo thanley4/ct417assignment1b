@@ -19,8 +19,9 @@ public class LectureManagementSystemTest
         lectureManagementSystem.addStudentToCourse(student, course);
         assertTrue(course.getStudents().contains(student));
         assertTrue(student.getCourses().contains(course));
-        System.out.println("Course: " + course + ", Students: " + course.getStudents());
-        System.out.println("Student: " + student + ", Courses: " + student.getCourses());
+        System.out.println("Course: " + course + "; Students: " + course.getStudents());
+        System.out.println("Student: " + student + "; Courses: " + student.getCourses());
+        System.out.println("\n");
     }
 
     @Test
@@ -32,6 +33,7 @@ public class LectureManagementSystemTest
         assertFalse(student.getCourses().contains(course));
         System.out.println("Course: " + course + ", Students: " + course.getStudents());
         System.out.println("Student: " + student + ", Courses: " + student.getCourses());
+        System.out.println("\n");
     }
 
     @Test

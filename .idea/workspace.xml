@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a4fc94a-7a19-4221-b549-8bebf87ac6c3" name="Changes" comment="Added print statements to LectureManagementSystem tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8a4fc94a-7a19-4221-b549-8bebf87ac6c3" name="Changes" comment="Formatting Fixes">
+      <change beforePath="$PROJECT_DIR$/src/test/java/LectureManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LectureManagementSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665482283021</updated>
       <workItem from="1665482285432" duration="1510000" />
-      <workItem from="1665588073746" duration="3149000" />
+      <workItem from="1665588073746" duration="3464000" />
     </task>
     <task id="LOCAL-00001" summary="Functional Commit">
       <created>1665482826051</created>
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665669537483</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Formatting Fixes">
+      <created>1665670000972</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665670000972</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +170,7 @@
     <MESSAGE value="Functional Commit" />
     <MESSAGE value="Import Tests Improved" />
     <MESSAGE value="Added print statements to LectureManagementSystem tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added print statements to LectureManagementSystem tests" />
+    <MESSAGE value="Formatting Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Formatting Fixes" />
   </component>
 </project>
