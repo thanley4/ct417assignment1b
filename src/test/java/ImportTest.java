@@ -14,49 +14,44 @@ public class ImportTest
     @Test
     public void testCourseImport()
     {
+        assertTrue(course.getModules().isEmpty());
+        assertTrue(course.getStudents().isEmpty());
         assertEquals(course.getName(), "Electronic and Computer Engineering");
         assertEquals(course.getStartDate(), new LocalDate(2019, 9, 5));
         assertEquals(course.getEndDate(), new LocalDate(2024, 5, 31));
-
-        assertTrue(course.getModules().isEmpty());
-        assertTrue(course.getStudents().isEmpty());
     }
 
     @Test
     public void testLecturerImport()
     {
+        assertTrue(lecturer.getModules().isEmpty());
         assertEquals(lecturer.getUsername(), "Michael42");
         assertEquals(lecturer.getName(), "Michael");
         assertEquals(lecturer.getDateOfBirth(), new LocalDate(1980, 1, 1));
         assertEquals(lecturer.getAge(), 42);
-
-        assertTrue(lecturer.getModules().isEmpty());
     }
 
     @Test
     public void testModuleImport()
     {
-        assertEquals(module.getName(), "Software Engineering 3");
-        assertEquals(module.getCode(), "CT417");
-
         assertTrue(module.getStudents().isEmpty());
         assertTrue(module.getCourses().isEmpty());
         assertNull(module.getLecturer());
-
         module.setLecturer(lecturer);
         assertEquals(module.getLecturer(), lecturer);
+        assertEquals(module.getName(), "Software Engineering 3");
+        assertEquals(module.getCode(), "CT417");
     }
 
     @Test
     public void testStudentImport()
     {
+        assertTrue(student.getCourses().isEmpty());
+        assertTrue(student.getModules().isEmpty());
         assertEquals(student.getName(), "Timothy");
         assertEquals(student.getDateOfBirth(), new LocalDate(2000, 12, 31));
         assertEquals(student.getAge(), 21);
         assertEquals(student.getId(), 19417576);
         assertEquals(student.getUsername(), "Timothy21");
-
-        assertTrue(student.getCourses().isEmpty());
-        assertTrue(student.getModules().isEmpty());
     }
 }
