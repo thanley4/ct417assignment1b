@@ -5,16 +5,15 @@ import static org.junit.jupiter.api.Assertions.*;
 public class LectureManagementSystemTest
 {
     LectureManagementSystem lectureManagementSystem = new LectureManagementSystem();
-    Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
-    Lecturer lecturer = new Lecturer("Michael", new LocalDate(1980, 1, 1));
-    Module module = new Module("Software Engineering 3", "CT417");
-    Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
 
     /** Course Tests **/
 
     @Test
     public void testAddStudentToCourse()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
+
         System.out.println("\ntestAddStudentToCourse");
         lectureManagementSystem.addStudentToCourse(student, course);
         assertTrue(course.getStudents().contains(student));
@@ -26,6 +25,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveStudentFromCourse()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
+
+        lectureManagementSystem.addStudentToCourse(student, course);
+
         System.out.println("\ntestRemoveStudentFromCourse");
         lectureManagementSystem.removeStudentFromCourse(student, course);
         assertFalse(course.getStudents().contains(student));
@@ -37,6 +41,9 @@ public class LectureManagementSystemTest
     @Test
     public void testAddModuleToCourse()
     {
+        Module module = new Module("Software Engineering 3", "CT417");
+        Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
+
         System.out.println("\ntestAddModuleToCourse");
         lectureManagementSystem.addModuleToCourse(module, course);
         assertTrue(course.getModules().contains(module));
@@ -49,6 +56,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveModuleFromCourse()
     {
+        Module module = new Module("Software Engineering 3", "CT417");
+        Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
+
+        lectureManagementSystem.addModuleToCourse(module, course);
+
         System.out.println("\ntestRemoveModuleFromCourse");
         lectureManagementSystem.removeModuleFromCourse(module, course);
         assertFalse(course.getModules().contains(module));
@@ -62,6 +74,9 @@ public class LectureManagementSystemTest
     @Test
     public void testAddStudentToModule()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Module module = new Module("Software Engineering 3", "CT417");
+
         System.out.println("\ntestAddStudentToModule");
         lectureManagementSystem.addStudentToModule(student, module);
         assertTrue(student.getModules().contains(module));
@@ -73,6 +88,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveStudentFromModule()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Module module = new Module("Software Engineering 3", "CT417");
+
+        lectureManagementSystem.addStudentToModule(student, module);
+
         System.out.println("\ntestRemoveStudentFromModule");
         lectureManagementSystem.removeStudentFromModule(student, module);
         assertFalse(student.getModules().contains(module));
@@ -84,6 +104,9 @@ public class LectureManagementSystemTest
     @Test
     public void testAddLecturerToModule()
     {
+        Lecturer lecturer = new Lecturer("Michael", new LocalDate(1980, 1, 1));
+        Module module = new Module("Software Engineering 3", "CT417");
+
         System.out.println("\ntestAddLecturerToModule");
         lectureManagementSystem.addLecturerToModule(lecturer, module);
         assertEquals(lecturer, module.getLecturer());
@@ -95,6 +118,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveLecturerFromModule()
     {
+        Lecturer lecturer = new Lecturer("Michael", new LocalDate(1980, 1, 1));
+        Module module = new Module("Software Engineering 3", "CT417");
+
+        lectureManagementSystem.addLecturerToModule(lecturer, module);
+
         System.out.println("\ntestRemoveLecturerFromModule");
         lectureManagementSystem.removeLecturerFromModule(lecturer, module);
         assertNull(module.getLecturer());
@@ -108,6 +136,9 @@ public class LectureManagementSystemTest
     @Test
     public void testAddModuleToLecturer()
     {
+        Lecturer lecturer = new Lecturer("Michael", new LocalDate(1980, 1, 1));
+        Module module = new Module("Software Engineering 3", "CT417");
+
         System.out.println("\ntestAddModuleToLecturer");
         lectureManagementSystem.addModuleToLecturer(module, lecturer);
         assertTrue(lecturer.getModules().contains(module));
@@ -119,6 +150,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveModuleFromLecturer()
     {
+        Lecturer lecturer = new Lecturer("Michael", new LocalDate(1980, 1, 1));
+        Module module = new Module("Software Engineering 3", "CT417");
+
+        lectureManagementSystem.addModuleToLecturer(module, lecturer);
+
         System.out.println("\ntestRemoveModuleFromLecturer");
         lectureManagementSystem.removeModuleFromLecturer(module, lecturer);
         assertFalse(lecturer.getModules().contains(module));
@@ -132,6 +168,9 @@ public class LectureManagementSystemTest
     @Test
     public void testAddCourseToStudent()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
+
         System.out.println("\ntestAddCourseToStudent");
         lectureManagementSystem.addCourseToStudent(course, student);
         assertTrue(student.getCourses().contains(course));
@@ -143,6 +182,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveCourseFromStudent()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Course course = new Course("Electronic and Computer Engineering", new LocalDate(2019, 9, 5), new LocalDate(2024, 5, 31));
+
+        lectureManagementSystem.addCourseToStudent(course, student);
+
         System.out.println("\ntestRemoveCourseFromStudent");
         lectureManagementSystem.removeCourseFromStudent(course, student);
         assertFalse(student.getCourses().contains(course));
@@ -154,6 +198,9 @@ public class LectureManagementSystemTest
     @Test
     public void testAddModuleToStudent()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Module module = new Module("Software Engineering 3", "CT417");
+
         System.out.println("\ntestAddModuleToStudent");
         lectureManagementSystem.addModuleToStudent(module, student);
         assertTrue(student.getModules().contains(module));
@@ -165,6 +212,11 @@ public class LectureManagementSystemTest
     @Test
     public void testRemoveModuleFromStudent()
     {
+        Student student = new Student("Timothy", new LocalDate(2000, 12, 31), 19417576);
+        Module module = new Module("Software Engineering 3", "CT417");
+
+        lectureManagementSystem.addModuleToStudent(module, student);
+
         System.out.println("\ntestRemoveModuleFromStudent");
         lectureManagementSystem.removeModuleFromStudent(module, student);
         assertFalse(student.getModules().contains(module));

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a4fc94a-7a19-4221-b549-8bebf87ac6c3" name="Changes" comment="Formatting Fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LectureManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LectureManagementSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -119,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665482283021</updated>
       <workItem from="1665482285432" duration="1510000" />
-      <workItem from="1665588073746" duration="3464000" />
+      <workItem from="1665588073746" duration="4196000" />
     </task>
     <task id="LOCAL-00001" summary="Functional Commit">
       <created>1665482826051</created>
@@ -149,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665670000972</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Formatting Fixes">
+      <created>1665670152327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665670152327</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Formatting Fixes">
+      <created>1665670464786</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665670464786</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
